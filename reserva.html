@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Burger</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <h1><a href="index.html"><img src="images/logo premium burger.jpg" alt="logo"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="reserva.html">Reserva</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="formulario">
+            <form>
+            
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label for="pedido">Pedido</label>
+                <textarea cols="70" rows="10" id="pedido" class="input-padron" required placeholder="Señalar el pedido"></textarea>
+
+                <fieldset>
+
+                    <legend>¿Deseas hacer uso del Delivery?</legend>
+
+                    <label for="siDelivery"><input type="radio" name="delivery" value="si" id="siDelivery" checked> Si, quiero que me envien mi pedido por Delivery</label>
+                    
+                    <label for="noDelibery"><input type="radio" name="delivery" value="no" id="noDelibery"> No, pasare por su sucursal</label>
+                                                      
+                </fieldset>
+                
+                <fieldset>
+
+                    <legend>¿Como prefieres realizar el pago?</legend>
+
+                    <label for="efectivo"><input type="radio" name="pago" value="efectivo" id="efectivo" checked>Efectivo</label>
+                    
+                    <label for="tarjeta"><input type="radio" name="pago" value="tarjeta" id="tarjeta">Tarjeta de Debito o Crédito</label>
+                    
+                    <label for="codigoQR"><input type="radio" name="pago" value="codigoQR" id="codigoQR">Codigo QR</label>
+                    
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Premium Burger?</label>    
+                
+                <input type="submit" value="Hacer Pedido" class="enviar">
+
+            </form>
+        </div>
+            
+        <div class="horario">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>12h - 22h</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>12h - 22h</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>12h - 22h</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>12h - 22h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>12h - 23h</td>
+                    </tr> 
+                    <tr>
+                        <td>Sabado</td>
+                        <td>12h - 23h</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>12h - 23h</td>
+                    </tr>
+                </tbody>
+                                
+            </table>
+        </div>
+
+        <div class="imagen">
+            <img src="images/logo premium burger.jpg" alt="logo">
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="copyright">&copy Copyright Premium Burger - 2022</p>
+    </footer>
+</body>
+</html>
